@@ -2,12 +2,21 @@
   margin-top:38px;
   max-width: 1000px;
 }
+/*COMPANY COLOR BLUE*/
 .bkcolor {
       background-color:#3095b4 ;
+}
+
+/*BACKGROUND OF BODY CONTENT*/
+#body-wrap {
+  background: white;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 #logo {
   margin-bottom:-40px;
 }
+
 /*VIDEO*/
 iframe
 {
@@ -17,7 +26,6 @@ iframe
     max-height: 100%;
     margin-bottom: -162px;
 }
-
 
 /*STICKY ELEMENT*/
 nav {
@@ -34,61 +42,6 @@ nav.fixed {
   right:0px;
   left:0px;
   z-index:999;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*company blue color*/
-
-/*sticky element*/
-/*.stick {*/
-  /*background-color:#3095b4;
-  font-family: 'Raleway',sans-serif;
-  color:white;
-  height: 50px;
-}
-#sticker {
-  width: 100%;
-  position: fixed;
-  top:0;
-}
-.under {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
-    z-index: -9;
-}*/
-
-
-div {
-  max-width: 1000px;
-}
-/*BACKGROUND OF BODY CONTENT*/
-#body-wrap {
-  background: white;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 /*CONTENT*/
@@ -125,3 +78,48 @@ div {
   font-family: 'Raleway',sans-serif;
   font-size: 32px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*UN-USED CODE BELOW TO BE DELETED*/
+
+/*company blue color*/
+/*sticky element*/
+/*.stick {*/
+  /*background-color:#3095b4;
+  font-family: 'Raleway',sans-serif;
+  color:white;
+  height: 50px;
+}
+#sticker {
+  width: 100%;
+  position: fixed;
+  top:0;
+}
+.under {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    z-index: -9;
+}*/
+/*div {
+  max-width: 1000px;
+}*/
