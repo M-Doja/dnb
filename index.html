@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   </head>
-  <body style="background-color:rgb(183, 215, 228);">
+  <body style="background-color:rgb(183, 215, 228);font-family:Raleway">
     <div class="container-fluid" >
       <div class="row">
 
@@ -32,22 +32,23 @@
       </div> <!-- END CHAT / LOGO ROW -->
 
       <!-- VIDEO -->
-      	<div class="row">
-      		<div class="col-md-12"tyle='margin-bottom:10px;' >
-            <iframe   src="https://www.youtube.com/embed/AvPvhqgeUNQ?rel=0&amp;showinfo=0"  frameborder="0" allowfullscreen="">
-            </iframe>
-                        <!-- spacer -->
-            <div style="height:100px;margin-top:6px"></div>
-      		</div>
-      	</div> <!-- END VIDEO ROW-->
+      <div class="wrapper" style="margin-bottom:-40px;">
+          <div class="h_iframe">
+              <!-- a transparent image is preferable -->
+              <img class="ratio" src="http://placehold.it/16x9"/>
+              <iframe src="https://www.youtube.com/embed/AvPvhqgeUNQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div> <!-- END VIDEO -->
+
+
 
       <!-- ALL PAGE CONTENT WRAP -->
      <div class='wrapper'>
        <div id="container">
 
          <!-- STICKY ELEMENT -->
-         <nav style="max-width:970px;margin:0 auto;background-color:#3095b4;text-align:center;font-family:Raleway;font-size:1.4em;padding-bottom:15px;">
-           <p>CALL 1-866-223-8185 NOW</p>
+         <nav style="max-width:970px;margin:0 auto;background-color:#3095b4;text-align:center;font-size:1.4em;padding-bottom:15px;">
+           <p style='color:white;margin-top:-20px;padding-top:10px;'>CALL 1-866-223-8185 NOW</p>
          </nav>
 
         <!-- BODY WRAP -->
@@ -55,8 +56,9 @@
         	<div class="row ">
             <!-- 1st section -->
         		<div class="col-md-12">
+              <p class="bkcolor"></p>
                <p class="body-ConHead"> Your Rules Our Data</p>
-                <p class="body-content" style="">DNBi 3.0 combines your credit policies and risk rules with Dun & Bradstreet’s data—the world’s largest business credit database—to deliver near instant credit decision recommendations. Use DNBi 3.0 to streamline your credit approval and management processes while protecting your business from unnecessary risk.</p>
+                <p class="body-content" style="text-align:justify">DNBi 3.0 combines your credit policies and risk rules with Dun & Bradstreet’s data—the world’s largest business credit database—to deliver near instant credit decision recommendations. Use DNBi 3.0 to streamline your credit approval and management processes while protecting your business from unnecessary risk.</p>
         		</div>
         	</div>
 
@@ -67,11 +69,11 @@
         		<div class="col-md-7">
               <p class="body-ConHead" style="text-align:left;"><span style="margin-left:">Automate Credit<br></span> Decision Recommendation</p>
 
-              <p class="body-content" style="text-align:justify">Save time by combining your credit policies and risk<br> rules with our data to deliver almost instant,<br> consistent credit decision recommendations on<br> new accounts, allowing you to focus on the ones<br> that require your expertise.</p>
+              <p class="body-content" style="text-align:left">Save time by combining your credit policies and risk rules with our data to deliver almost instant, consistent credit decision recommendations on new accounts, allowing you to focus on the ones that require your expertise.</p>
 
-              <p class="body-content" style="text-align:justify;margin-bottom:-60px">For these more complex cases, you can access<br> the most up-to-date financial information, news articles,<br> and more to help you make the best credit decision.</p>
+              <p class="body-content" style="text-align:left;margin-bottom:-60px">For these more complex cases, you can access the most up-to-date financial information, news articles, and more to help you make the best credit decision.</p>
         		</div>
-        		<div class="col-md-5">
+        		<div class="col-md-5" id="pic">
               <img src="images/icon01.png" class='img img-responsive'  style="float:right;margin-top:150px;margin-bottom:10px;" height="100"alt="Automatation bars" />
         		</div>
         	</div>
@@ -80,18 +82,21 @@
 
         <!-- 3RD SECTION -->
       	<div class="row content" >
-      		<div class="col-md-5">
+      		<div class="col-md-5" id="pic">
             <img src="images/icon02.png" class='img img-responsive'  style="float:left;margin-top:40px;margin-bottom:40px;" height="100"alt="Streamline credit" />
       		</div>
       		<div class="col-md-7" style="margin:0 auto;">
             <p class="body-ConHead" ><span style='margin-left:-20px;'> Streamline Credit</span><br> Applications Online</p>
 
-            <p class="body-content">Capture the information you need at the time<br> of submission to help you make credit decisions by<br> sending new applicants a completely customizable<br> online application that includes:</p>
-            <ul class="body-list"  style="text-align:center" >
-              <span><li> Your Business Name, Branding, & Logo</li></span>
-              <li style="margin-right:35px;"><span>Your Questions & Required Fields</span></li>
-              <li style="margin-right:90px;" ><span>Your Terms & Conditions</span></li>
-            </ul>
+            <p class="body-content" style="text-align:left;" >Capture the information you need at the time of submission to help you make credit decisions by sending new applicants a completely customizable online application that includes:</p>
+
+
+                <ul class="body-list" >
+                  <span><li> Your Business Name, Branding, & Logo</li></span>
+                  <li style="margin-right:35px;"><span>Your Questions & Required Fields</span></li>
+                  <li style="margin-right:90px;" ><span>Your Terms & Conditions</span></li>
+                </ul>
+
 
       		</div>
       	</div>
@@ -103,9 +108,9 @@
       		<div class="col-md-7">
             <p class="body-ConHead" style="text-align:left"> Enjoy Faster Credit Processing</p>
 
-            <p class="body-content" style="text-align:justify">You’ll receive an automatic email alert every time a new application is submitted. All new applications are delivered right into your DNBi 3.0 Inbox. With DNBi, it’s easy to see the automated credit decision<br> recommendation and the reason for the outcome.</p>
+            <p class="body-content" style="text-align:left">You’ll receive an automatic email alert every time a new application is submitted. All new applications are delivered right into your DNBi 3.0 Inbox. With DNBi, it’s easy to see the automated credit decision<br> recommendation and the reason for the outcome.</p>
       		</div>
-      		<div class="col-md-5">
+      		<div class="col-md-5" id="pic">
             <img src="images/icon03.png" class='img img-responsive'  style="float:left;margin-top:40px;margin-bottom:40px;" height="100"alt="Streamline credit" />
       		</div>
       	</div>
@@ -114,26 +119,26 @@
 
         <!-- 5TH SECTION -->
       	<div class="row content">
-      		<div class="col-md-5">
+      		<div class="col-md-5" id="pic">
             <img src="images/icon04.png" class='img img-responsive'  style="float:left;margin-top:40px;margin-bottom:40px;" height="100"alt="Streamline credit" />
       		</div>
       		<div class="col-md-7" style="text-align:center">
             <p class="body-ConHead" > Manage Your Entire<br><span style='margin-left:-65px;'> Risk Portfolio</span></p>
 
-            <p class="body-content" style="text-align:center ;margin-left:20px;">Mitigate your business risk and identify new opportunities with an aggregated view of your entire credit portfolio. Set custom alerts to be notified of any changes within your portfolio and quickly identify potentially risky accounts.</p>
+            <p class="body-content" style="text-align:left ;">Mitigate your business risk and identify new opportunities with an aggregated view of your entire credit portfolio. Set custom alerts to be notified of any changes within your portfolio and quickly identify potentially risky accounts.</p>
       		</div>
       	</div>
       </div> <!-- END BODY WRAP -->
 
         <!-- LOWER CONTENT / FOOTER AREA CONTENT -->
         <div class="row " style="max-width:1000px;">
-      		<div class="col-md-12 ">
+      		<div class="col-md-12">
             <div class='bkcolor'>
-              <p id="foot">Consistent. Accurate. Fast.</p>
+              <p id="foot" style="padding-top:50px;">Consistent. Accurate. Fast.</p>
 
-              <p style="color:white;text-align:center;margin-bottom:50px;font-family:Raleway">Let DNBi 3.0 help you effectively manage your credit and risk decisions,<br> enabling you to close sales faster.</p>
+              <p style="color:white;text-align:center;margin-bottom:50px;padding-left:10px;padding-right:10px;">Let DNBi 3.0 help you effectively manage your credit and risk decisions,<br> enabling you to close sales faster.</p>
 
-              <p id="foot">CALL 1-866-223-8185 NOW</p>
+              <p id="foot" style="padding-left:10px;padding-right:10px;">CALL 1-866-223-8185 NOW</p>
 
               <p style="color:white;text-align:center;padding-bottom:50px;font-family:Raleway;margin-top:-15px;">AND SPEAK WITH A D&B CREDIT ADVISOR TO GET STARTED.</p>
             </div>
